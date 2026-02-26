@@ -21,7 +21,7 @@ section#welcome{
    height: 100vh;
    background-repeat: no-repeat;
    background-size: cover;
-   background-attachment: fixed;
+   background-attachment: local;
 }
 
 header{
@@ -29,7 +29,7 @@ header{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 10%;
+   height: 60px;
 }
 
 header h2 a{
@@ -54,15 +54,39 @@ header h2 a{
 }
 
 #menu-lateral{
-   background-color: var(--Fundos-secundários-seções);
+   background: linear-gradient( to right,rgba(227, 242, 253,0.9), rgba(21,101,192,1));
+   border-radius: 0px 0px 12px 0px;
    position: fixed;
    top: 0;
    left: 0;
-   width: 270px;
-   height: 50vh;
+   width: 210px;
+   height: 300px;
    transform: translateX(-100%);
    transition: transform 0.3s ease;
    z-index: 1;
+}
+
+.list-menu #list-top{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-left: 10px;
+   height: 240px;
+   border-radius: 0px 0px 12px 0px;
+   font-size: 1.4em;
+}
+
+.list-menu #list-top li{
+   list-style: none;
+}
+
+.list-menu a{
+   text-decoration: none;
+   color: var(--Textos-principais);
+}
+
+.list-menu a:hover{
+   color: var(--Botões-links-destaques);
 }
 
 #menu-lateral.ativo{
@@ -70,22 +94,27 @@ header h2 a{
 }
 
 .topo-menu{
-   background-color: var(--Fundos-secundários-seções);
    color: var(--Botões-links-destaques);
    height: 60px;
    display: flex;
    align-items: center;
-   padding-left: 20px;
-   font-size: 2em;
-   border-bottom: 2px solid var(--Botões-links-destaques);
+   border-bottom: 2px solid var(--Fundos-secundários-seções);
 }
 
 #fechar{
-   background-color: var(--Textos-principais);
-   color: var(--Fundos-secundários-seções);
-   font-size: 32px;
-   cursor: pointer;
+   margin: 20px;
    padding: 2px;
+   font-size: 2em;
+   background-color: var(--Fundos-secundários-seções);
+   color: var(--Botões-links-destaques);
+   padding: 3px;
+   border-radius: 8px;
+}
+
+#fechar:hover{
+   background-color: var(--Fundos-secundários-seções);
+   color: var(--Textos-principais);
+   
    border-radius: 8px;
 }
 
@@ -148,4 +177,96 @@ div.hello p{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+section#sobre, #skills, #formacao, #projetos{
+   display: grid;
+   grid-template-columns: 15px 1fr 15px;
+}
+
+section#sobre h2{
+   grid-column: 2;
+   text-align: center;
+   margin-top: 50px;
+   padding-bottom: 20px;
+   font-size: 2.4em;
+   color: var(--Textos-principais);
+}
+
+section#sobre article{
+   grid-column: 2;
+   background-color: var(--Fundos-secundários-seções);
+   margin-bottom: 100px;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+section#sobre article h3{
+   color: var(--Textos-principais);
+   font-size: 1.6em;
+}
+
+section#sobre article p{
+   background: linear-gradient(to bottom, var(--Fundo-principal-cards), var(--Fundos-secundários-seções));
+   color: var(--Textos-principais);
+   box-shadow: 2px 4px 4px 3px rgba(158, 158, 158, 0.2);
+   margin: 20px;
+   padding: 15px;
+   font-size: 1.1em;
+   line-height: 1.5em;
+   border-radius: 8px;
+}
+
+section#sobre article p a{
+   color: var(--Textos-secundarios);
+   text-decoration: none;
+   font-weight: bold;
+}
+
+section#sobre article p a:hover{
+   color: var(--Botões-links-destaques);
+}
+
+.foto-perfil{
+   grid-column: 2;
+   width: 200px;
+   margin: 20px;
+   border-radius: 50%;
+   border: 5px solid var(--Fundo-principal-cards);
+   outline: 5px solid var(--Botões-links-destaques);
+}
+
+section#skills{
+   background-color: var(--Fundos-secundários-seções);
+}
+
+section#skills h2{
+   grid-column: 2;
+   text-align: center;
+   margin-top: 50px;
+   padding-bottom: 20px;
+   font-size: 2.4em;
+   color: var(--Textos-principais);
+}
+
+section#skills #text-skills{
+   grid-column: 2;
+   text-align: center;
+   padding-bottom: 20px;
+   margin: 20px;
+   color: var(--Botões-links-destaques);
+   line-height: 1.5em;
+}
+
+#text-skills{
+   margin-bottom: 20px;
+}
+
+section#skills .skills-itens{
+   grid-column: 2;
+   background-color: red;
+   margin: 10px;
+   padding: 20px;
 }
