@@ -527,6 +527,7 @@ section#projetos .projetos .projeto-local {
    background-color: var(--Fundos-secundários-seções);
    color: var(--Botões-links-destaques);
    font-weight: bold;
+   font-size: 1em;
    padding: 20px;
    margin: 10px;
    border: 0px;
