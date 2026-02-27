@@ -449,3 +449,86 @@ article.form .button .local{
    box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
    font-weight:bold;
 }
+
+section#projetos{
+   background-color: var(--Fundos-secundários-seções);
+}
+
+section#projetos h2{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-column: 2;
+   text-align: center;
+   height: 100px;
+   width: auto;
+   margin-top: 20px;
+   margin-bottom: 50px;
+   font-size: 2.1em;
+   color: var(--Textos-principais);
+}
+
+section#projetos article.projetos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   grid-column: 2;
+   background-color: var(--Fundo-principal-cards);
+   border-radius: 8px;
+   height: 500px;
+   margin: 20px;
+   padding: 20px;
+}
+
+section#projetos article.projetos .projeto-icon i{
+   background-color: var(--Textos-principais);
+   color: var(--Fundo-principal-cards);
+   font-size: 3em;
+   padding: 10px;
+   margin: 30px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+section#projetos article.projetos .projeto-text{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 200px;
+}
+
+section#projetos article.projetos .projeto-text h3{
+   color: var(--Textos-principais);
+   margin: 20px;
+   font-size: 1.6em;
+}
+
+section#projetos article.projetos .projeto-text p{
+   color: var(--Botões-links-destaques);
+   text-align: center;
+   line-height: 1.5em;
+   font-size: 1.1em;
+   
+}
+
+section#projetos article.projetos .projeto-button{
+   height: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+section#projetos .projetos .projeto-local {
+   background-color: var(--Fundos-secundários-seções);
+   color: var(--Botões-links-destaques);
+   font-weight: bold;
+   padding: 20px;
+   margin: 10px;
+   border: 0px;
+   border-radius: 8px;
+}
