@@ -195,7 +195,7 @@ section#sobre h2.subtitle{
    width: auto;
    margin-top: 30px;
    margin-bottom: 50px;
-   font-size: 2.4em;
+   font-size: 2.1em;
    color: var(--Textos-principais);
 }
 
@@ -259,7 +259,7 @@ section#skills h2.subtitle{
    height: 100px;
    width: auto;
    margin-top: 20px;
-   font-size: 2.4em;
+   font-size: 2.1em;
    color: var(--Textos-principais);
 }
 
@@ -269,9 +269,9 @@ h2.subtitle::after{
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
-  width: 150px; 
-  height: 4px;
-  background: #2c6faa;
+  width: 120px; 
+  height: 3px;
+  background: linear-gradient(to right, var(--Textos-principais), var(--Botões-links-destaques));
   border-radius: 5px;
 }
 
@@ -366,7 +366,7 @@ section#formacao h2.subtitle{
    width: auto;
    margin-top: 30px;
    margin-bottom: 50px;
-   font-size: 2.4em;
+   font-size: 2.1em;
    color: var(--Textos-principais);
 }
 
