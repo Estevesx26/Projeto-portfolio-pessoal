@@ -3,7 +3,7 @@
 :root{
    --Fundo-principal-cards: #FFFFFF;
    --Fundos-secundários-seções: #E3F2FD;
-   --Botões-links-destaques: #2196F3;
+   --Botões-links-destaques: #2196f3;
    --Textos-principais: #1565C0;
    --Bordas-separadores: #F5F5F5;
    --Textos-secundarios: #9E9E9E;
@@ -30,6 +30,18 @@ header{
    justify-content: space-between;
    align-items: center;
    height: 60px;
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.rolando {
+   background-color: var(--Textos-principais);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h2 a{
@@ -38,6 +50,7 @@ header h2 a{
   -webkit-text-fill-color: transparent;
    text-decoration: none;
    padding-right: 20px;
+   
 }
 
 #burger{
@@ -59,7 +72,7 @@ header h2 a{
    position: fixed;
    top: 0;
    left: 0;
-   width: 210px;
+   width: 180px;
    height: 300px;
    transform: translateX(-100%);
    transition: transform 0.3s ease;
@@ -451,7 +464,8 @@ article.form .button .local{
 }
 
 section#projetos{
-   background-color: var(--Fundos-secundários-seções);
+   background-image: linear-gradient(to bottom, var(--Fundos-secundários-seções), var(--Fundo-principal-cards));
+   margin-bottom: 50px;
 }
 
 section#projetos h2{
@@ -464,7 +478,7 @@ section#projetos h2{
    height: 100px;
    width: auto;
    margin-top: 20px;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
    font-size: 2.1em;
    color: var(--Textos-principais);
 }
@@ -479,6 +493,7 @@ section#projetos article.projetos{
    height: 500px;
    margin: 20px;
    padding: 20px;
+   box-shadow: 2px 4px 4px 3px rgba(158, 158, 158, 0.2);
 }
 
 section#projetos article.projetos .projeto-icon i{
@@ -486,7 +501,7 @@ section#projetos article.projetos .projeto-icon i{
    color: var(--Fundo-principal-cards);
    font-size: 3em;
    padding: 10px;
-   margin: 30px;
+   margin: 10px;
    width: 80px;
    height: 80px;
    border-radius: 50%;
@@ -500,12 +515,13 @@ section#projetos article.projetos .projeto-text{
    display: flex;
    align-items: center;
    flex-direction: column;
-   height: 200px;
+   height: auto;
+   margin: 20px;
 }
 
 section#projetos article.projetos .projeto-text h3{
    color: var(--Textos-principais);
-   margin: 20px;
+   margin: 10px;
    font-size: 1.6em;
 }
 
@@ -532,4 +548,65 @@ section#projetos .projetos .projeto-local {
    margin: 10px;
    border: 0px;
    border-radius: 8px;
+}
+
+footer{
+   background-color: var(--Textos-principais);
+   display: grid;
+   gap: 8px;
+}
+
+footer .descricao{
+   color: var(--Fundo-principal-cards);
+   padding: 10px 0px 10px 15px;
+}
+
+footer .descricao p{
+   color: var(--Textos-secundarios);
+   margin-top: 10px;
+}
+
+footer .links-rapidos{
+   color: var(--Fundo-principal-cards);
+   padding: 10px 0px 10px 15px;
+   display: flex;
+   flex-direction: column;
+}
+
+footer .links-rapidos a{
+   color: var(--Textos-secundarios);
+   text-decoration: none;
+   margin: 10px 0px 10px 0px;
+}
+
+footer .contatos{
+   color: var(--Fundo-principal-cards);
+   padding: 10px 0px 10px 15px;
+   border-bottom: 1px solid var(--Textos-secundarios);
+}
+
+footer .contatos p{
+   color: var(--Textos-secundarios);
+   padding: 10px 0px 10px 0px;
+}
+
+div.footer-icons i{
+   background-color:rgba(255, 255, 255, 0.1);
+   font-size: 1.6em;
+   padding: 8px;
+   margin: 0px 10px 20px 0px;
+   border-radius: 4px;
+}
+
+div.footer-icons i:hover{
+   background-color: var(--Botões-links-destaques);
+}
+
+footer .footer-end h2{
+   color: var(--Fundo-principal-cards);
+}
+
+div.end{
+   margin: 30px auto;
+   color: var(--Textos-secundarios);
 }
