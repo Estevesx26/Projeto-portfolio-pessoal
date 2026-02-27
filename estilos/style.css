@@ -189,8 +189,12 @@ section#sobre h2.subtitle{
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100px;
    grid-column: 2;
+   text-align: center;
+   height: 100px;
+   width: auto;
+   margin-top: 30px;
+   margin-bottom: 50px;
    font-size: 2.4em;
    color: var(--Textos-principais);
 }
@@ -253,6 +257,8 @@ section#skills h2.subtitle{
    grid-column: 2;
    text-align: center;
    height: 100px;
+   width: auto;
+   margin-top: 20px;
    font-size: 2.4em;
    color: var(--Textos-principais);
 }
@@ -347,4 +353,99 @@ section#skills .skills-itens{
 
 .skills-itens .text-skills {
    color: var(--Botões-links-destaques);
+}
+
+section#formacao h2.subtitle{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-column: 2;
+   text-align: center;
+   height: 100px;
+   width: auto;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   font-size: 2.4em;
+   color: var(--Textos-principais);
+}
+
+section#formacao article.form{
+   grid-column: 2;
+}
+
+article.form{
+   background: linear-gradient(to bottom, var(--Fundos-secundários-seções), var(--Fundo-principal-cards));
+   margin-bottom: 50px;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 2px 4px 4px 3px rgba(158, 158, 158, 0.5);
+   height: auto;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+article.form .icon-form i{
+   background-color: var(--Textos-principais);
+   color: var(--Fundos-secundários-seções);
+   font-size: 2.5em;
+   margin-bottom: 15px;
+   width: 70px;
+   height: 70px;
+   border-radius: 8px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+article.form .text-form h3{
+   color: var(--Textos-principais);
+   margin-bottom: 5px;
+}
+
+article.form .text-form h4{
+   color: var(--Botões-links-destaques);
+   margin-bottom: 5px;
+}
+
+article.form .text-form p{
+   color: var(--Textos-secundarios);
+   line-height: 1.3em;
+   margin-bottom: 5px;
+}
+
+article.form .button .andamento{
+   background-color: var(--Fundo-principal-cards);
+   color: var(--Textos-principais);
+   margin: 5px 5px 5px 0px;
+   padding: 10px;
+   border: 0px;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
+   font-weight:bold;
+}
+
+article.form .button .ensino{
+   background-color: var(--Fundo-principal-cards);
+   color: var(--Textos-principais);
+   margin: 5px 5px 5px 0px;
+   padding: 10px;
+   border: 0px;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
+   font-weight:bold;
+}
+
+article.form .button .local{
+   background-color: var(--Fundo-principal-cards);
+   color: var(--Textos-principais);
+   margin: 5px 5px 5px 0px;
+   padding: 10px;
+   border: 0px;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
+   font-weight:bold;
 }
