@@ -17,11 +17,15 @@
 
 section#welcome{
    background: linear-gradient(rgba(21,101,192,0.6), rgba(21,101,192,0.6)), url(../imagens/fundo2-welcome.jpg);
-   height: 100vh;
+   min-height: 100dvh;
    background-position: center left;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: local;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 header{
@@ -501,7 +505,6 @@ section#projetos article.projetos{
    grid-column: 2;
    background-color: var(--Fundo-principal-cards);
    border-radius: 8px;
-   height: 500px;
    margin: 20px;
    padding: 20px;
    box-shadow: 2px 4px 4px 3px rgba(158, 158, 158, 0.2);
