@@ -621,6 +621,11 @@ footer .footer-end h2{
 }
 
 div.end{
-   margin: 30px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   text-align: center;
+   height: 50px;
    color: var(--Textos-secundarios);
 }
