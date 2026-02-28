@@ -65,6 +65,7 @@ header h2 a{
   -webkit-text-fill-color: transparent;
    text-decoration: none;
    padding-right: 20px;
+   user-select: none;
    
 }
 
@@ -72,18 +73,20 @@ header h2 a{
    margin: 20px;
    padding: 2px;
    font-size: 2em;
+   cursor: pointer;
+   user-select: none;
 }
 
 #burger:hover{
    background-color: var(--Fundos-secundários-seções);
    color: var(--Botões-links-destaques);
-   padding: 3px;
    border-radius: 8px;
+   user-select: none;
 }
 
 #menu-lateral{
-   background: linear-gradient( to right,rgba(227, 242, 253,0.9), rgba(21,101,192,1));
-   border-radius: 0px 0px 12px 0px;
+   border-radius: 0px 0px 8px 0px;
+   box-shadow: 2px 4px 4px 3px rgba(158, 158, 158, 0.2);
    position: fixed;
    top: 0;
    left: 0;
@@ -95,12 +98,13 @@ header h2 a{
 }
 
 .list-menu #list-top{
+   background-color: var(--Textos-principais);
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    padding-left: 10px;
    height: 240px;
-   border-radius: 0px 0px 12px 0px;
+   border-radius: 0px 0px 8px 0px;
    font-size: 1.4em;
 }
 
@@ -110,7 +114,7 @@ header h2 a{
 
 .list-menu a{
    text-decoration: none;
-   color: var(--Textos-principais);
+   color: var(--Fundo-principal-cards);
 }
 
 .list-menu a:hover{
@@ -137,6 +141,7 @@ header h2 a{
    color: var(--Botões-links-destaques);
    padding: 3px;
    border-radius: 8px;
+   cursor: pointer;
 }
 
 #fechar:hover{
@@ -152,6 +157,7 @@ div.hello{
    align-items: center;
    flex-direction: column;
    height: 85%;
+   user-select: none;
 }
 
 div.hello h1{
@@ -225,6 +231,7 @@ section#sobre h2.subtitle{
    margin-bottom: 50px;
    font-size: 2.1em;
    color: var(--Textos-principais);
+   user-select: none;
 }
 
 section#sobre article{
@@ -240,6 +247,7 @@ section#sobre article{
 section#sobre article h3{
    color: var(--Textos-principais);
    font-size: 1.6em;
+   user-select: none;
 }
 
 section#sobre article p{
@@ -270,11 +278,13 @@ section#sobre article p a:hover{
    border-radius: 50%;
    border: 5px solid var(--Fundo-principal-cards);
    outline: 5px solid var(--Botões-links-destaques);
+   user-select: none;
 }
 
 section#skills{
    background-color: var(--Fundos-secundários-seções);
    gap: 10px;
+   user-select: none;
 }
 
 section#skills h2.subtitle{
@@ -396,6 +406,7 @@ section#formacao h2.subtitle{
    margin-bottom: 50px;
    font-size: 2.1em;
    color: var(--Textos-principais);
+   user-select: none;
 }
 
 section#formacao article.form{
@@ -568,6 +579,7 @@ footer{
    background-color: var(--Textos-principais);
    display: grid;
    gap: 8px;
+   user-select: none;
 }
 
 footer .descricao{
