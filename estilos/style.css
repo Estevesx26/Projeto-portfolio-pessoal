@@ -409,6 +409,20 @@ section#formacao h2.subtitle{
    user-select: none;
 }
 
+h2#complementar{
+   grid-column: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--Fundo-principal-cards);
+   color: var(--Botões-links-destaques);
+   margin-bottom: 50px;
+   padding: 10px;
+   border: 2px solid var(--Botões-links-destaques);
+   border-radius: 20px;
+   font-size: 1.6em;
+}
+
 section#formacao article.form{
    grid-column: 2;
 }
@@ -487,6 +501,10 @@ article.form .button .local{
    border-radius: 8px;
    box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
    font-weight:bold;
+}
+
+article.form .button .local a{
+   padding: 0px;
 }
 
 section#projetos{

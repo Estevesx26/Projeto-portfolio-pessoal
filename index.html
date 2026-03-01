@@ -55,6 +55,16 @@
                 Tenho 22 anos e me destaco pela curiosidade e vontade constante de aprender. Atualmente, aprofundo meus conhecimentos em JavaScript e desenvolvimento web, direcionando minha carreira para a programação e evolução técnica contínua.
                 Sou responsável, disciplinado e comprometido com resultados. Atuo em ambiente cooperativo por meio de empresa terceirizada, fortalecendo minhas habilidades de organização, colaboração e cumprimento de prazos.
                 Busco uma oportunidade de estágio na área de TI para desenvolver minhas habilidades técnicas e contribuir de forma efetiva para a equipe.</p>
+
+                <div class="sobre-icons">
+                    <i class="fa-brands fa-square-github"></i>
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
             </article>
         </section>
         <!--FIM DA SEÇÃO SOBRE-->
@@ -163,7 +173,7 @@
 
                     <button class="local">
                         <i class="fa-regular fa-house"></i>
-                        QI Faculdade & Escola Técnica
+                        <a href="https://qi.edu.br/">QI Faculdade & Escola Técnica</a>
                     </button>
                 </div>
             </article>
@@ -192,6 +202,36 @@
                     <button class="local">
                         <i class="fa-regular fa-house"></i>
                         Instituto Estadual Rio Branco
+                    </button>
+                </div>
+            </article>
+
+            <h2 id="complementar">Formação Complementar</h2>
+
+            <article class="form">
+                <div class="icon-form">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+                <div class="text-form">
+                    <h3>HTML5 e CSS3 - 5 módulos</h3>
+                    <h4>Desenvolvimento Front-End</h4>
+                </div>
+
+                <div class="button">
+                    <button class="andamento">
+                        <i class="fa-solid fa-award"></i>
+                        Concluído
+                    </button>
+                    
+                    <button class="ensino">
+                        <i class="fa-regular fa-bookmark"></i>
+                        Formação Complementar
+                    </button>
+
+                    <button class="local">
+                        <i class="fa-brands fa-youtube"></i>
+                        <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a>
                     </button>
                 </div>
             </article>
@@ -256,27 +296,6 @@
         </div>
     </footer>
 
-    <script>
-        const menu=document.getElementById('menu-lateral')
-        const abrir=document.getElementById('burger')
-        const fechar=document.getElementById('fechar')
-
-        abrir.onclick=()=>{
-            menu.classList.add('ativo')
-        }
-        fechar.onclick=()=>{
-            menu.classList.remove('ativo')
-        }
-
-        window.addEventListener("scroll", function() {
-    const header = document.querySelector("header");
-
-    if (window.scrollY   > 50) {
-        header.classList.add("rolando");
-    } else {
-        header.classList.remove("rolando");
-    }
-});
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
