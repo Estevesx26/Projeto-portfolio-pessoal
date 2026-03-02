@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (tipo) {
       body.classList.add('escuro');
       if (botao) {
-        botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        botao.innerHTML = '<i class="fa-regular fa-sun"></i>';
       }
     } else {
       body.classList.remove('escuro');
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
      📜 SCROLL SUAVE MENU
   ========================== */
 
-  const navLinks = document.querySelectorAll('#menu ul a.link');
+  const navLinks = document.querySelectorAll('a[href^="#"]');
 
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
@@ -49,12 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const header = document.querySelector('header');
         const headerHeight = header ? header.offsetHeight : 0;
 
-        const targetPosition = target.offsetTop - headerHeight - 20;
+        const targetPosition = target.offsetTop - headerHeight - 0;
 
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'
         });
+
+        // fecha o menu depois de clicar
+        menu.classList.remove('ativo');
+        abrir.textContent = "menu";
       }
     });
   });
@@ -69,16 +73,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const fechar = document.getElementById('fechar');
 
   if (abrir && menu) {
-    abrir.addEventListener('click', () => {
-      menu.classList.add('ativo');
-    });
-  }
+  abrir.addEventListener('click', () => {
 
-  if (fechar && menu) {
-    fechar.addEventListener('click', () => {
-      menu.classList.remove('ativo');
-    });
-  }
+    menu.classList.toggle('ativo');
+
+    // troca o ícone
+    if (menu.classList.contains('ativo')) {
+      abrir.textContent = "close";
+    } else {
+      abrir.textContent = "menu";
+    }
+
+  });
+}
 
 
   /* =========================
