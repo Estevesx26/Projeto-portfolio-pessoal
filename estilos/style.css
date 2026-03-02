@@ -5,17 +5,25 @@
    --Fundos-secundários-seções: #E3F2FD;
    --Botões-links-destaques: #2196f3;
    --Textos-principais: #1565C0;
+   --Titulo-principal: #003366;
    --Bordas-separadores: #F5F5F5;
    --Textos-secundarios: #9E9E9E;
+
+   --Textos-principais2:#1565C0;
+
+   --Fundo-linear: rgba(255,255,255,0.6);
 }
 
 body.escuro {
-   --Fundo-principal-cards: #121212;
-   --Fundos-secundários-seções: #1E1E1E;
-   --Botões-links-destaques: #64B5F6;
+   --Fundo-principal-cards: #0D1117;
+   --Fundos-secundários-seções: #161B22;
+   --Botões-links-destaques: #2196F3;
    --Textos-principais: #E3F2FD;
-   --Bordas-separadores: #2A2A2A;
-   --Textos-secundarios: #B0B0B0;
+   --Titulo-principal: #58A6FF;
+   --Bordas-separadores: #2A2F36;
+   --Textos-secundarios: #9E9E9E;
+
+   --Fundo-linear: rgba(0, 0, 0, 0.6);
 }
 
 #botao-tema {
@@ -41,8 +49,12 @@ header.rolando #botao-tema {
    font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+   background-color: var(--Fundo-principal-cards);
+}
+
 section#welcome{
-   background: linear-gradient(rgba(21,101,192,0.6), rgba(21,101,192,0.6)), url(../imagens/fundo2-welcome.jpg);
+   background: linear-gradient(var(--Fundo-linear)), url(../imagens/fundo2-welcome.jpg);
    min-height: 100dvh;
    background-position: center left;
    background-repeat: no-repeat;
@@ -100,6 +112,7 @@ header h2 a{
 }
 
 #burger{
+   color: var(--Fundos-secundários-seções);
    margin: 20px;
    padding: 2px;
    font-size: 2em;
@@ -175,18 +188,18 @@ div.hello{
 }
 
 div.hello h1{
-   color: var(--Fundo-principal-cards);
+   color: var(--Textos-principais);
    margin: 25px;
    text-align: center;
    font-size: 2.4em;
 }
 
 div.hello h2{
-   color: var(--Fundo-principal-cards);
+   color: var(--Titulo-principal);
 }
 
 div.hello p{
-   color: var(--Fundo-principal-cards);
+   color: var(--Textos-principais);
    text-align: center;
    font-size: 1.1em;
    line-height: 1.5em;
