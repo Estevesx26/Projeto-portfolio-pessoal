@@ -55,7 +55,7 @@ body{
 
 section#welcome{
    background: linear-gradient(var(--Fundo-linear)), url(../imagens/fundo2-welcome.jpg);
-   min-height: 100dvh;
+   min-height: 100svh;
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -134,10 +134,10 @@ header h2 a{
    position: fixed;
    top: 0px;
    left: 0;
-   width: 200px;
+   width: 180px;
    height: auto;
    user-select: none;
-   transform: translateX(-100%);
+   transform: translateX(-105%);
    transition: transform 0.3s;
    z-index: 1;
 }
