@@ -1,28 +1,34 @@
 @charset "UTF-8";
 
 :root{
-   --Fundo-principal-cards: #FFFFFF;
-   --Fundos-secundários-seções: #E3F2FD;
-   --Botões-links-destaques: #2196f3;
-   --Textos-principais: #1565C0;
-   --Titulo-principal: #0056ac;
-   --Bordas-separadores: #F5F5F5;
-   --Textos-secundarios: #9E9E9E;
+   --Fundo-principal-cards: rgb(255, 255, 255);
+   --Fundos-secundários-seções: rgb(227, 242, 253);
+   --Botões-links-destaques: rgb(33, 150, 243);
+   --Textos-principais: rgb(21, 101, 192);
+   --Titulo-principal: rgb(73, 161, 250);
+   --Bordas-separadores: rgb(245, 245, 245);
+   --Textos-secundarios: rgb(158, 158, 158);
 
-   --Textos-principais2:#1565C0;
+   --Textos-principais2:rgb(227, 242, 253);
+   --Fundos-secundários-seções2: rgb(227, 242, 253);
 
-   --Fundo-linear: rgba(255,255,255,0.6);
+   --back-footer: rgba(255, 255, 255, 0.1);
+   --Fundo-linear: rgba(97, 133, 177, 0.7);
 }
 
 body.escuro {
-   --Fundo-principal-cards: #0D1117;
-   --Fundos-secundários-seções: #161B22;
-   --Botões-links-destaques: #2196F3;
-   --Textos-principais: #E3F2FD;
-   --Titulo-principal: #58A6FF;
-   --Bordas-separadores: #2A2F36;
-   --Textos-secundarios: #9E9E9E;
+   --Fundo-principal-cards: rgb(13, 17, 23);
+   --Fundos-secundários-seções: rgb(22, 27, 34);
+   --Botões-links-destaques: rgb(33, 150, 243);
+   --Textos-principais: rgb(227, 242, 253);
+   --Titulo-principal: rgb(88, 166, 255);
+   --Bordas-separadores: rgb(42, 47, 54);
+   --Textos-secundarios: rgb(158, 158, 158);
 
+   --Textos-principais2:rgb(227, 242, 253);
+   --Fundos-secundários-seções2: rgb(199, 225, 255);
+
+   --back-footer: rgba(245, 245, 245);
    --Fundo-linear: rgba(0, 0, 0, 0.6);
 }
 
@@ -30,7 +36,7 @@ body.escuro {
    font-size: 1.6em;
    margin-right: 20px;
    cursor: pointer;
-   color: var(--Fundo-principal-cards);
+   color: var(--Fundos-secundários-seções2);
    display: flex;
    align-items: center;
 }
@@ -112,7 +118,7 @@ header h2 a{
 }
 
 #burger{
-   color: var(--Fundos-secundários-seções);
+   color: var(--Fundos-secundários-seções2);
    margin: 20px;
    padding: 2px;
    font-size: 2em;
@@ -188,7 +194,7 @@ div.hello{
 }
 
 div.hello h1{
-   color: var(--Textos-principais);
+   color: var(--Textos-principais2);
    margin: 25px;
    text-align: center;
    font-size: 2.4em;
@@ -199,7 +205,7 @@ div.hello h2{
 }
 
 div.hello p{
-   color: var(--Textos-principais);
+   color: var(--Textos-principais2);
    text-align: center;
    font-size: 1.1em;
    line-height: 1.5em;
@@ -519,6 +525,25 @@ article.form .button .andamento{
    font-weight:bold;
 }
 
+article.form .button .concluido{
+   background-color: var(--Fundo-principal-cards);
+   color: var(--Textos-principais);
+   margin: 5px 5px 5px 0px;
+   padding: 10px;
+   border: 0px;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
+   font-weight:bold;
+}
+
+article.form .button .concluido:hover{
+   color: green;
+}
+
+article.form .button .andamento:hover{
+   color: orangered;
+}
+
 article.form .button .ensino{
    background-color: var(--Fundo-principal-cards);
    color: var(--Textos-principais);
@@ -653,12 +678,17 @@ footer .links-rapidos{
    padding: 10px 0px 10px 15px;
    display: flex;
    flex-direction: column;
+   align-items: start;
 }
 
 footer .links-rapidos a{
    color: var(--Textos-secundarios);
    text-decoration: none;
    margin: 10px 0px 10px 0px;
+}
+
+footer .links-rapidos a:hover{
+   color: var(--Fundo-principal-cards);
 }
 
 footer .contatos{
@@ -673,7 +703,7 @@ footer .contatos p{
 }
 
 div.footer-icons i{
-   background-color:rgba(255, 255, 255, 0.1);
+   background-color:var(--back-footer);
    color: var(--Fundo-principal-cards);
    font-size: 1.6em;
    padding: 8px;

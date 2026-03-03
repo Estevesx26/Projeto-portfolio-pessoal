@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (tipo) {
       body.classList.add('escuro');
       if (botao) {
-        botao.innerHTML = '<i class="fa-regular fa-sun"></i>';
+        botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
       }
     } else {
       body.classList.remove('escuro');
