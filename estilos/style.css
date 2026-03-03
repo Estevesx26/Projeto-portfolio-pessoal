@@ -5,7 +5,7 @@
    --Fundos-secundários-seções: #E3F2FD;
    --Botões-links-destaques: #2196f3;
    --Textos-principais: #1565C0;
-   --Titulo-principal: #003366;
+   --Titulo-principal: #0056ac;
    --Bordas-separadores: #F5F5F5;
    --Textos-secundarios: #9E9E9E;
 
@@ -422,13 +422,13 @@ section#skills .skills-itens{
 }
 
 .skills-itens .text-skills h3{
-   color: var(--Textos-principais);
+   color: var(--Titulo-principal);
    margin-bottom: auto;
    margin-bottom: 5px;
 }
 
 .skills-itens .text-skills {
-   color: var(--Botões-links-destaques);
+   color: var(--Textos-principais);
 }
 
 section#formacao h2.subtitle{
@@ -601,13 +601,13 @@ section#projetos article.projetos .projeto-text{
 }
 
 section#projetos article.projetos .projeto-text h3{
-   color: var(--Textos-principais);
+   color: var(--Titulo-principal);
    margin: 10px;
    font-size: 1.6em;
 }
 
 section#projetos article.projetos .projeto-text p{
-   color: var(--Botões-links-destaques);
+   color: var(--Textos-principais);
    text-align: center;
    line-height: 1.5em;
    font-size: 1.1em;
