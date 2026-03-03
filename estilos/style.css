@@ -78,13 +78,12 @@ header{
    justify-content: space-between;
    align-items: center;
    height: 60px;
-
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
    z-index: 1000;
-   transform: translateZ(0); /* força nova camada */
+   transform: translateZ(0);
    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -373,7 +372,9 @@ section#skills .skills-itens{
    grid-column: 2;
    background-color: var(--Fundo-principal-cards);
    height: 120px;
-   margin: 10px;
+   width: 85%;
+   margin: auto;
+   margin-bottom: 20px;
    padding: 20px;
    border-radius: 8px;
    box-shadow: 2px 4px 4px 3px rgba(158, 158, 158, 0.2);
@@ -728,3 +729,126 @@ div.end{
    height: 50px;
    color: var(--Textos-secundarios);
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        padding: 0px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    header h2 {
+      padding-left: 20px;
+        order: 1;
+    }
+
+    #menu-lateral {
+        order: 2;
+    }
+
+    #botao-tema {
+        order: 3;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    #menu-lateral {
+        position: static;
+        transform: none;
+        width: auto;
+        height: auto;
+        background: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .list-menu #list-top {
+        background: none;
+        height: auto;
+        padding: 0;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .list-menu a {
+        color: var(--Fundos-secundários-seções2);
+        padding-left: 20px;
+        font-size: 1rem;
+    }
+
+    header.rolando .list-menu a {
+        color: var(--Textos-principais);
+    }
+     section#skills{
+      grid-template-columns: 15px 1fr 1fr 15px ;
+    }
+
+    section#skills h2.subtitle{
+      grid-column: 2/4;
+    }
+
+    section#skills #text-skills{
+      grid-column: 2/4;
+    }
+
+    section#skills
+
+    section#skills .skills-itens#html{
+      grid-column: 2/3;
+    }
+
+    section#skills .skills-itens#css{
+      grid-column: 3/4;
+    }
+
+    section#skills .skills-itens#js{
+      grid-column: 2/3;
+    }
+
+    section#skills .skills-itens#git{
+      grid-column: 3/4;
+    }
+
+    section#skills .skills-itens#github{
+      grid-column: 2/3;
+    }
+
+    section#skills .skills-itens#logica{
+      grid-column: 3/4;
+    }
+
+    section#formacao{
+      grid-template-columns: 15px 1fr 1fr 15px;
+      gap: 16px;
+    }
+
+    section#formacao .form#qi{
+      grid-column: 2/3;
+    }
+
+    section#formacao .form#rb{
+      grid-column: 3/4;
+    }
+
+    section#formacao h2.subtitle{
+      grid-column: 2/4;
+    }
+
+    section#formacao h2{
+      grid-column: 2/4;
+    }
+
+    section#formacao .form#curso-em-video{
+      grid-column: 2/4;
+    }
