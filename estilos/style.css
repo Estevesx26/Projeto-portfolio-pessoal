@@ -495,7 +495,6 @@ h2#complementar{
    color: var(--Textos-principais);
    margin: 50px auto;
    padding: 10px;
-   width: 400px;
    border-radius: 20px;
    font-size: 1.6em;
 }
