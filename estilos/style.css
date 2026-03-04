@@ -207,7 +207,7 @@ div.hello h1{
    color: var(--Textos-principais2);
    margin: 25px;
    text-align: center;
-   font-size: 2.7em;
+   font-size: 2.4em;
 }
 
 div.hello h2{
@@ -268,7 +268,7 @@ section#sobre, #skills, #formacao, #projetos{
 
 section#sobre h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 700;
+   font-weight: 600;
    position: relative;
    display: flex;
    justify-content: center;
@@ -355,7 +355,7 @@ section#skills{
 
 section#skills h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 700;
+   font-weight: 600;
    position: relative;
    display: flex;
    justify-content: center;
@@ -471,7 +471,7 @@ section#formacao{
 
 section#formacao h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 700;
+   font-weight: 600;
    position: relative;
    display: flex;
    justify-content: center;
@@ -499,7 +499,7 @@ h2#complementar{
    margin: 50px auto;
    padding: 10px;
    border-radius: 20px;
-   font-size: 1.6em;
+   font-size: 2em;
 }
 
 section#formacao article.form{
@@ -622,7 +622,7 @@ section#projetos{
 
 section#projetos h2{
    font-family: 'Poppins', sans-serif;
-   font-weight: 700;
+   font-weight: 600;
    position: relative;
    display: flex;
    justify-content: center;
