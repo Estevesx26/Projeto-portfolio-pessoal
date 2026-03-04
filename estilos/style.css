@@ -399,7 +399,6 @@ section#skills #text-skills{
 section#skills .skills-itens{
    grid-column: 2;
    background-color: var(--Fundo-principal-cards);
-   height: 120px;
    width: 85%;
    margin: auto;
    margin-bottom: 20px;
