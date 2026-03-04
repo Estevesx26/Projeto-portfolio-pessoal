@@ -207,7 +207,7 @@ div.hello h1{
    color: var(--Textos-principais2);
    margin: 25px;
    text-align: center;
-   font-size: 2.4em;
+   font-size: 2em;
 }
 
 div.hello h2{
@@ -494,10 +494,10 @@ h2#complementar{
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: var(--Fundo-principal-cards);
    color: var(--Textos-principais);
    margin: 50px auto;
    padding: 10px;
+   text-align: center;
    border-radius: 20px;
    font-size: 2em;
 }
