@@ -32,6 +32,8 @@ body.escuro {
    --Fundo-linear: rgba(0, 0, 0, 0.6);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;500;600&family=Sora:wght@500;600&family=Space+Grotesk:wght@600;700&family=Bebas+Neue&display=swap');
+
 #botao-tema {
    font-size: 1.6em;
    margin-right: 20px;
@@ -52,11 +54,13 @@ header.rolando #botao-tema {
 *{
    margin: 0px;
    padding: 0px;
-   font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
    background-color: var(--Fundo-principal-cards);
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   line-height: 1.6;
 }
 
 section#welcome{
@@ -167,6 +171,8 @@ header h2 a{
 }
 
 .list-menu a{
+   font-family: 'Bebas Neue', sans-serif;
+   letter-spacing: 2px;
    text-decoration: none;
    color: var(--Fundo-principal-cards);
 }
@@ -190,31 +196,39 @@ div.hello{
    flex-direction: column;
    height: 85%;
    user-select: none;
+   width: 480px;
    padding-top: 80px;
    padding-bottom: 50px;
 }
 
 div.hello h1{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 800;
    color: var(--Textos-principais2);
    margin: 25px;
    text-align: center;
-   font-size: 2.4em;
+   font-size: 2.7em;
 }
 
 div.hello h2{
    color: var(--Titulo-principal);
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 600;
 }
 
 div.hello p{
    color: var(--Textos-principais2);
    text-align: center;
    font-size: 1.1em;
-   line-height: 1.5em;
+   line-height: 1.6;
    margin: 20px;
    padding: 10px;
 }
 
 .button a{
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
    background-color: var(--Fundo-principal-cards);
    color: var(--Textos-principais);
    text-decoration: none;
@@ -253,6 +267,8 @@ section#sobre, #skills, #formacao, #projetos{
 }
 
 section#sobre h2.subtitle{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
    position: relative;
    display: flex;
    justify-content: center;
@@ -276,9 +292,14 @@ section#sobre article{
    display: flex;
    flex-direction: column;
    align-items: center;
+   max-width: 600px;
+   margin: auto;
+   margin-bottom: 100px;
 }
 
 section#sobre article h3{
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 600;
    color: var(--Textos-principais);
    font-size: 1.6em;
    user-select: none;
@@ -291,7 +312,7 @@ section#sobre article p{
    margin: 20px;
    padding: 15px;
    font-size: 1.1em;
-   line-height: 1.5em;
+   line-height: 1.6;
    border-radius: 8px;
 }
 
@@ -333,6 +354,8 @@ section#skills{
 }
 
 section#skills h2.subtitle{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
    position: relative;
    display: flex;
    justify-content: center;
@@ -359,6 +382,9 @@ h2.subtitle::after{
 }
 
 section#skills #text-skills{
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -441,6 +467,8 @@ section#skills .skills-itens{
 }
 
 section#formacao h2.subtitle{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
    position: relative;
    display: flex;
    justify-content: center;
@@ -457,15 +485,17 @@ section#formacao h2.subtitle{
 }
 
 h2#complementar{
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 600;
    grid-column: 2;
    display: flex;
    justify-content: center;
    align-items: center;
    background-color: var(--Fundo-principal-cards);
-   color: var(--Botões-links-destaques);
-   margin-bottom: 50px;
+   color: var(--Textos-principais);
+   margin: 50px auto;
    padding: 10px;
-   border: 2px solid var(--Botões-links-destaques);
+   width: 400px;
    border-radius: 20px;
    font-size: 1.6em;
 }
@@ -502,6 +532,8 @@ article.form .icon-form i{
 }
 
 article.form .text-form h3{
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 600;
    color: var(--Textos-principais);
    margin-bottom: 5px;
 }
@@ -525,7 +557,9 @@ article.form .button .andamento{
    border: 0px;
    border-radius: 8px;
    box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
-   font-weight:bold;
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
 }
 
 article.form .button .concluido{
@@ -536,7 +570,9 @@ article.form .button .concluido{
    border: 0px;
    border-radius: 8px;
    box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
-   font-weight:bold;
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
 }
 
 article.form .button .concluido:hover{
@@ -555,7 +591,9 @@ article.form .button .ensino{
    border: 0px;
    border-radius: 8px;
    box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
-   font-weight:bold;
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
 }
 
 article.form .button .local{
@@ -566,7 +604,9 @@ article.form .button .local{
    border: 0px;
    border-radius: 8px;
    box-shadow: 2px 2px 2px 1px rgba(24, 24, 24, 0.5);
-   font-weight:bold;
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
 }
 
 article.form .button .local a{
@@ -579,6 +619,8 @@ section#projetos{
 }
 
 section#projetos h2{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
    position: relative;
    display: flex;
    justify-content: center;
@@ -643,6 +685,9 @@ section#projetos article.projetos .projeto-text p{
 }
 
 section#projetos article.projetos .projeto-button{
+   font-family: 'Sora', sans-serif;
+   font-weight: 600;
+   letter-spacing: 0.5px;
    height: auto;
    display: flex;
    flex-direction: column;
@@ -665,6 +710,10 @@ footer{
    grid-template-columns: 1fr;
    gap: 8px;
    user-select: none;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+   line-height: 1.6;
+   opacity: 0.8;
 }
 
 footer .descricao{
@@ -737,6 +786,7 @@ div.end{
 @media (min-width:768px) and (orientation: landscape){
 
    div.hello{
+      width: 480px;
       padding-top: 80px;
       padding-bottom: 50px;
    }
@@ -802,6 +852,17 @@ div.end{
     header.rolando .list-menu a {
         color: var(--Textos-principais);
     }
+
+    div.hello{
+      width: 550px;
+    }
+
+    section#sobre article{
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 100px;
+    }
+
      section#skills{
       grid-template-columns: 15px 1fr 1fr 15px ;
     }
@@ -906,7 +967,98 @@ div.end{
         margin-right: auto;
     }
 
+    div.hello{
+      width: 600px;
+    }
+
     #menu-lateral {
         margin-right: 30px;
+    }
+
+    section#sobre article{
+      max-width: 1000px;
+      margin: auto;
+      margin-bottom: 100px;
+    }
+
+    section#skills{
+      grid-template-columns: 15px 1fr 1fr 1fr 15px;
+    }
+
+    section#skills article.skills-itens#js{
+      grid-column: 4/5;
+    }
+
+    section#skills article.skills-itens#git{
+      grid-column: 2/3;
+    }
+
+    section#skills article.skills-itens#github{
+      grid-column: 3/4;
+    }
+
+    section#skills article.skills-itens#logica{
+      grid-column: 4/5;
+    }
+
+    section#skills h2.subtitle{
+      grid-column: 2/5;
+    }
+
+    section#skills #text-skills{
+      grid-column: 2/5;
+    }
+
+    section#formacao{
+      display: flex;
+      flex-direction: column;
+      width: 1000px;
+      margin: auto;
+      margin-bottom: 100px;
+    }
+
+    h2#complementar{
+      width: 400px;
+    }
+
+    section#projetos article.projetos{
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    footer{
+      padding: 0px;
+      margin: 0px;
+    }
+
+    footer{
+         grid-template-columns: 1fr 1fr 1fr;
+         padding: 20px;
+    }
+
+    footer div.descricao{
+         grid-column: 1/2;
+         text-align: start;
+         padding: 20px;
+    }
+
+    footer div.links-rapidos{
+         grid-column: 2/3;
+         margin: auto;
+         display: flex;
+         align-items: center;
+    }
+
+    footer div.contatos{
+      grid-column: 3/4;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+    }
+
+    footer div.end{
+      grid-column: 1/4;
+      text-align: center;
     }
 }
