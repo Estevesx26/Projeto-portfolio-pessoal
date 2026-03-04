@@ -190,6 +190,8 @@ div.hello{
    flex-direction: column;
    height: 85%;
    user-select: none;
+   padding-top: 80px;
+   padding-bottom: 50px;
 }
 
 div.hello h1{
@@ -660,6 +662,7 @@ section#projetos .projetos .projeto-local {
 footer{
    background-color: var(--Textos-principais);
    display: grid;
+   grid-template-columns: 1fr;
    gap: 8px;
    user-select: none;
 }
@@ -694,8 +697,7 @@ footer .links-rapidos a:hover{
 
 footer .contatos{
    color: var(--Fundo-principal-cards);
-   padding: 10px 0px 10px 15px;
-   border-bottom: 1px solid var(--Textos-secundarios);
+   padding: 10px 0px 0px 15px;
 }
 
 footer .contatos p{
@@ -725,12 +727,22 @@ div.end{
    justify-content: center;
    align-items: center;
    margin: 10px;
+   padding-top: 20px;
    text-align: center;
    height: 50px;
    color: var(--Textos-secundarios);
+   border-top: 1px solid var(--Textos-secundarios);
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width:768px) and (orientation: landscape){
+
+   div.hello{
+      padding-top: 80px;
+      padding-bottom: 50px;
+   }
+}
+
+@media (min-width: 768px){
 
     header {
         padding: 0px;
@@ -739,7 +751,8 @@ div.end{
     header {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 10px;
     }
 
     #burger {
@@ -747,12 +760,9 @@ div.end{
     }
 
     header h2 {
-      padding-left: 20px;
+        padding-left: 20px;
         order: 1;
-    }
-
-    #menu-lateral {
-        order: 2;
+        margin-right: auto;
     }
 
     #botao-tema {
@@ -764,6 +774,8 @@ div.end{
     }
 
     #menu-lateral {
+        order: 2;
+        margin-right: 20px;
         position: static;
         transform: none;
         width: auto;
@@ -850,5 +862,51 @@ div.end{
     }
 
     section#formacao .form#curso-em-video{
-      grid-column: 2/4;
+         grid-column: 2/4;
     }
+
+    footer{
+         grid-template-columns: 1fr 1fr;
+    }
+
+    footer div.descricao{
+         grid-column: 1/3;
+         text-align: center;
+    }
+
+    footer div.links-rapidos{
+         grid-column: 1/3;
+         margin: auto;
+         display: flex;
+         align-items: center;
+    }
+
+    footer div.contatos{
+      grid-column: 1/3;
+      flex-direction: column;
+      margin: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    footer div.end{
+      grid-column: 1/3;
+      text-align: center;
+    }
+
+}
+
+@media (min-width: 1024px){
+   header {
+        justify-content: flex-start; 
+        gap: 40px; 
+    }
+
+    header h2 {
+        margin-right: auto;
+    }
+
+    #menu-lateral {
+        margin-right: 30px;
+    }
+}
