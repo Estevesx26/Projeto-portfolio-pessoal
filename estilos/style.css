@@ -54,7 +54,6 @@ header.rolando #botao-tema {
 *{
    margin: 0px;
    padding: 0px;
-   box-sizing: border-box;
 }
 
 body{
@@ -465,6 +464,10 @@ section#skills .skills-itens{
 
 .skills-itens .text-skills {
    color: var(--Textos-principais);
+}
+
+section#formacao{
+   box-sizing: border-box;
 }
 
 section#formacao h2.subtitle{
