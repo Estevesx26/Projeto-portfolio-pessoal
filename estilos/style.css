@@ -56,6 +56,10 @@ header.rolando #botao-tema {
    padding: 0px;
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 body{
    background-color: var(--Fundo-principal-cards);
    font-family: 'Inter', sans-serif;
@@ -146,8 +150,7 @@ header h2 a{
    width: 180px;
    height: auto;
    user-select: none;
-   transform: translateX(-105%);
-   transition: transform 0.3s;
+   transform: translateX(-100%);
    z-index: 1;
 }
 
@@ -172,7 +175,7 @@ header h2 a{
 
 .list-menu a{
    font-family: 'Bebas Neue', sans-serif;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
    text-decoration: none;
    color: var(--Fundo-principal-cards);
 }
@@ -186,7 +189,7 @@ header h2 a{
    height: 60px;
    display: flex;
    align-items: center;
-   border-bottom: 2px solid var(--Fundos-secundários-seções);
+   
 }
 
 div.hello{
@@ -531,7 +534,8 @@ article.form .icon-form i{
 
 article.form .text-form h3{
    font-family: 'Space Grotesk', sans-serif;
-   font-weight: 600;
+   font-weight: 900;
+   font-size: 1.2em;
    color: var(--Textos-principais);
    margin-bottom: 5px;
 }
@@ -781,6 +785,14 @@ div.end{
    border-top: 1px solid var(--Textos-secundarios);
 }
 
+@media (max-width: 767px){
+
+   #menu-lateral{
+      transition: transform 0.3s;
+   }
+
+}
+
 @media (min-width:768px) and (orientation: landscape){
 
    div.hello{
@@ -808,9 +820,10 @@ div.end{
     }
 
     header h2 {
-        padding-left: 20px;
+        padding-left: 10px;
         order: 1;
         margin-right: auto;
+        font-size: 1.5em;
     }
 
     #botao-tema {
@@ -831,6 +844,7 @@ div.end{
         background: none;
         display: flex;
         align-items: center;
+        transition: 0s;
     }
 
     .list-menu #list-top {
@@ -852,7 +866,19 @@ div.end{
     }
 
     div.hello{
-      width: 550px;
+      width: 600px;
+    }
+
+    div.hello h1{
+      font-size: 3em;
+    }
+
+    div.hello h2{
+      font-size: 1.8em;
+    }
+
+    div.hello p{
+      font-size: 1.2em;
     }
 
     section#sobre article{
@@ -963,10 +989,23 @@ div.end{
 
     header h2 {
         margin-right: auto;
+        font-size: 1.7em;
     }
 
     div.hello{
-      width: 600px;
+      width: 800px;
+    }
+
+    div.hello h1{
+      font-size: 4em;
+    }
+
+    div.hello h2{
+      font-size: 2.2em;
+    }
+
+    div.hello p{
+      font-size: 1.3em;
     }
 
     #menu-lateral {

@@ -4,31 +4,49 @@ document.addEventListener("DOMContentLoaded", function () {
      🌙 TEMA CLARO / ESCURO
   ========================== */
 
-  const botao = document.getElementById('botao-tema');
+  const botao = document.getElementById("botao-tema");
   const body = document.body;
 
-  const temasalvo = localStorage.getItem('tema');
-  temaEscuro(temasalvo === 'escuro');
+  const temaSalvo = localStorage.getItem("tema");
+  aplicarTema(temaSalvo === "escuro");
 
-  function temaEscuro(tipo) {
-    if (tipo) {
-      body.classList.add('escuro');
-      if (botao) {
-        botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
-      }
+  function aplicarTema(escuro) {
+    if (escuro) {
+      body.classList.add("escuro");
+      if (botao) botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
     } else {
-      body.classList.remove('escuro');
-      if (botao) {
-        botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
-      }
+      body.classList.remove("escuro");
+      if (botao) botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
     }
   }
 
   if (botao) {
-    botao.addEventListener('click', () => {
-      const isescuro = body.classList.toggle('escuro');
-      temaEscuro(isescuro);
-      localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
+    botao.addEventListener("click", () => {
+      const escuro = body.classList.toggle("escuro");
+      aplicarTema(escuro);
+      localStorage.setItem("tema", escuro ? "escuro" : "claro");
+    });
+  }
+
+
+  /* =========================
+     🍔 MENU LATERAL
+  ========================== */
+
+  const menu = document.getElementById("menu-lateral");
+  const abrir = document.getElementById("burger");
+
+  if (abrir && menu) {
+    abrir.addEventListener("click", () => {
+
+      menu.classList.toggle("ativo");
+
+      if (menu.classList.contains("ativo")) {
+        abrir.textContent = "close";
+      } else {
+        abrir.textContent = "menu";
+      }
+
     });
   }
 
@@ -40,68 +58,64 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll('a[href^="#"]');
 
   navLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
+    link.addEventListener("click", function (e) {
+
       e.preventDefault();
 
-      const target = document.querySelector(this.getAttribute('href'));
+      const target = document.querySelector(this.getAttribute("href"));
 
       if (target) {
-        const header = document.querySelector('header');
+
+        const header = document.querySelector("header");
         const headerHeight = header ? header.offsetHeight : 0;
 
-        const targetPosition = target.offsetTop - headerHeight - 0;
+        const targetPosition = target.offsetTop - headerHeight;
 
         window.scrollTo({
           top: targetPosition,
-          behavior: 'smooth'
+          behavior: "smooth"
         });
 
         // fecha o menu depois de clicar
-        menu.classList.remove('ativo');
-        abrir.textContent = "menu";
+        if (menu) menu.classList.remove("ativo");
+        if (abrir) abrir.textContent = "menu";
+
       }
+
     });
   });
 
 
   /* =========================
-     🍔 MENU LATERAL
-  ========================== */
-
-  const menu = document.getElementById('menu-lateral');
-  const abrir = document.getElementById('burger');
-  const fechar = document.getElementById('fechar');
-
-  if (abrir && menu) {
-  abrir.addEventListener('click', () => {
-
-    menu.classList.toggle('ativo');
-
-    // troca o ícone
-    if (menu.classList.contains('ativo')) {
-      abrir.textContent = "close";
-    } else {
-      abrir.textContent = "menu";
-    }
-
-  });
-}
-
-
-  /* =========================
-     🎯 HEADER MUDA COR NO SCROLL
+     🎯 HEADER MUDA COR SCROLL
   ========================== */
 
   const header = document.querySelector("header");
 
   if (header) {
     window.addEventListener("scroll", function () {
+
       if (window.scrollY > 50) {
         header.classList.add("rolando");
       } else {
         header.classList.remove("rolando");
       }
+
     });
   }
+
+
+  /* =========================
+     🛠 CORREÇÃO BUG RESPONSIVO
+  ========================== */
+
+  window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 768) {
+      if (menu) menu.classList.remove("ativo");
+      if (abrir) abrir.textContent = "menu";
+    }
+
+  });
 
 });
