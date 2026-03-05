@@ -145,17 +145,21 @@ header h2 a{
 #menu-lateral{
    border-radius: 0px 0px 8px 0px;
    position: fixed;
-   top: 0px;
+   top: 0;
    left: 0;
    width: 180px;
-   height: auto;
+   height: 100vh;
    user-select: none;
    transform: translateX(-100%);
    z-index: 1;
 }
 
+#menu-lateral.animando {
+  transition: transform 0.3s ease;
+}
+
 #menu-lateral.ativo{
-   transform: translateY(0);
+   transform: translateX(0);
 }
 
 .list-menu #list-top{
@@ -783,14 +787,6 @@ div.end{
    height: 50px;
    color: var(--Textos-secundarios);
    border-top: 1px solid var(--Textos-secundarios);
-}
-
-@media (max-width: 767px){
-
-   #menu-lateral{
-      transition: transform 0.3s;
-   }
-
 }
 
 @media (min-width:768px) and (orientation: landscape){
