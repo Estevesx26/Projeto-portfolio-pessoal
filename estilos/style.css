@@ -268,7 +268,7 @@ section#sobre, #skills, #formacao, #projetos{
 
 section#sobre h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 600;
+   font-weight: 800;
    position: relative;
    display: flex;
    justify-content: center;
@@ -279,7 +279,7 @@ section#sobre h2.subtitle{
    width: auto;
    margin-top: 30px;
    margin-bottom: 50px;
-   font-size: 2.1em;
+   font-size: 1.9em;
    color: var(--Textos-principais);
    user-select: none;
 }
@@ -355,7 +355,7 @@ section#skills{
 
 section#skills h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 600;
+   font-weight: 800;
    position: relative;
    display: flex;
    justify-content: center;
@@ -365,7 +365,7 @@ section#skills h2.subtitle{
    height: 100px;
    width: auto;
    margin-top: 20px;
-   font-size: 2.1em;
+   font-size: 1.9em;
    color: var(--Textos-principais);
 }
 
@@ -465,13 +465,9 @@ section#skills .skills-itens{
    color: var(--Textos-principais);
 }
 
-section#formacao{
-   box-sizing: border-box;
-}
-
 section#formacao h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 600;
+   font-weight: 800;
    position: relative;
    display: flex;
    justify-content: center;
@@ -482,24 +478,24 @@ section#formacao h2.subtitle{
    width: auto;
    margin-top: 30px;
    margin-bottom: 50px;
-   font-size: 2.1em;
+   font-size: 1.9em;
    color: var(--Textos-principais);
    user-select: none;
 }
 
 h2#complementar{
    font-family: 'Space Grotesk', sans-serif;
-   font-weight: 600;
+   font-weight: 900;
    grid-column: 2;
    display: flex;
    justify-content: center;
    align-items: center;
    color: var(--Textos-principais);
-   margin: 50px auto;
+   margin: auto;
+   margin-bottom: 50px;
    padding: 10px;
    text-align: center;
-   border-radius: 20px;
-   font-size: 2em;
+   font-size: 1.8em;
 }
 
 section#formacao article.form{
@@ -620,9 +616,9 @@ section#projetos{
    margin-bottom: 50px;
 }
 
-section#projetos h2{
+section#projetos h2.subtitle{
    font-family: 'Poppins', sans-serif;
-   font-weight: 600;
+   font-weight: 800;
    position: relative;
    display: flex;
    justify-content: center;
@@ -633,7 +629,7 @@ section#projetos h2{
    width: auto;
    margin-top: 20px;
    margin-bottom: 20px;
-   font-size: 2.1em;
+   font-size: 1.9em;
    color: var(--Textos-principais);
 }
 
